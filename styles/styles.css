@@ -1,0 +1,975 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+}
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+/* ----- Start HomePage CSS -------- */
+
+.container {
+
+}
+.container_header{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#EFCC52;
+    overflow: hidden;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+.logo{
+    font-size: 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+.hero {
+    position:relative
+}
+
+
+.imageHero {
+    display: block;
+overflow: visible;
+/* z-index: -1; */
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+max-width: 100%;
+object-fit: contain;
+}
+
+
+.navLinks{
+    flex: 1;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* new navlinks */
+.navLinks ul li {
+    list-style: none;
+    /* padding: 8px 12px; */
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.navLinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    /* padding: 39px 10px; */
+    display: block;
+    font-size: 16px;
+    transition: all 0.3s ease-out 0s;
+    text-transform: capitalize;
+    position: relative;
+    margin: 0 23px;
+}
+.navLinks ul li.active > a::before {
+    width: 100%;
+  }
+.navLinks ul li a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -6px;
+    background: #fff;
+    height: 3px;
+    width: 0;
+    transition: .3s;
+}
+
+.container_header .fa{
+    display: none;
+}
+.Wrapper {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 85%;
+    margin: auto;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    padding: 10px;
+}
+.firstWrapper{
+    flex: 0.5;
+}
+.secondWrapper{
+    flex: 0.5;
+    background: rgba(255,255,255,0.8);
+    padding: 57px 115px 50px 60px;
+    margin-left: -152px;
+}
+section{
+    margin-top: 5%;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    margin-top: 5%;
+}
+.rowBlog{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+h1{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+.col-md{
+    background: #EFCC52;
+    padding: 9% 0%;
+    margin-bottom: 5%;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 5%;
+    flex: 0.3;
+    text-align: center;
+}
+.blogsHeader{
+    display: flex;
+    justify-content: center;
+}
+.roleBlog{
+    background: #EFCC52;
+    width: 80px;
+    height: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 25px;
+}
+.blog-col{
+    flex: 0.25;
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 5% 1%;
+    border-left: 15px solid #efcc52;
+    border-bottom: 2px solid #efcc52;
+    border-right: 2px solid #efcc52;
+    border-top: 2px solid #efcc52;
+    background-color: white;
+}
+.imgText {
+    display: flex;
+width: 100%;
+justify-content: space-around;
+}
+.imgSrc{
+    flex: 0.4;
+}
+.imageSrc {
+    width: 100px;
+    height: 100px;
+}
+.btnDate {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.btnDate1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.textHeader{
+    flex: 0.6;
+    /* margin-top: 35px; */
+}
+.pText{
+    text-align: end;
+}
+.btn-btn a{
+    text-decoration: none;
+}
+.btn-btn{
+    text-decoration: none;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    padding: 6px;
+    float: right;
+}
+.footer {
+    margin-top: 5%;
+    background: black;
+    padding: 5px;
+    border-top: 25px solid #e1ad01;
+    color: white;
+}
+.footerP {
+margin: 20px 40px 60px;
+}
+.socials {
+    margin: 20px 40px 60px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.infoSocials {
+    display: flex;
+    justify-content: space-between;
+}
+.nameFooter {
+    /* display: flex; */
+}
+.hr1{
+    /* color: white;*/
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: -24px; 
+}
+.hr2 {
+    /* color: white;*/
+    width: 40%;
+    float: right;
+    margin-top: -14px; 
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-left: 3%;
+margin-right: 1%;
+}
+.copyright a{
+    text-decoration: none;
+color: white;
+}
+.blackBox{
+    border: 2px solid black;
+    width: 25px;
+    background: black;
+}
+/* ----- End HomePage CSS -------- */
+
+/* ----- Start About CSS -------- */
+.aboutImgText{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    align-items: center;
+}
+.layered-card {
+    position: relative;
+    flex: 0.5;
+}
+.textWrapper{
+    flex: 0.5;
+    background: rgba(255,255,255,0.8);
+    padding: 50px 100px 50px 60px;
+    /* margin-left: -152px; */
+    margin-top: 25px;
+}
+
+.posiTextWrapper {
+    flex: 0.5;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.posiTextWrapper p{
+    font-size: 18px;
+font-weight: 500;
+line-height: 2;
+padding: 10px;
+}
+.layered-card::before {
+    background: rgba(0, 0, 0, 0.3);
+    content: '';
+
+    /* Position */
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    /* Display under the main content */
+    z-index: -1;
+/* border: 2px solid #e1ad01; */
+
+}
+.layered-card img{
+    margin-top: 100px;
+width: 100%;
+max-width: 100%;
+object-fit: contain;
+}
+
+/* ----- End About CSS -------- */
+
+/* ----- Start Gallery CSS -------- */
+.slideshow-container{
+    width: 80%;
+    margin: 80px 145px 11px auto;
+}
+.container1 {
+    display: flex;
+}
+.container2{
+    display: flex;
+}
+.fade1{
+    width: 90%;
+background: aliceblue;
+margin-right: 20px;
+margin-bottom: 30px;
+}
+.fade2{
+    width: 90%;
+margin-right: 20px;
+background: gray;
+margin-bottom: 30px;
+
+} 
+
+/* ----- End Gallery CSS -------- */
+
+/* ----- Start Contact CSS -------- */
+.contactRow{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+.imgCol{
+    flex: 0.4;
+    background-color: #a58e7f;
+    margin-top: 60px;
+}
+
+.imgCol img{
+    height: 100%;
+}
+.formCol{
+ flex: 0.6;
+ margin-top: 55px;
+ margin-left: 30px;
+}
+.formContainer {
+    margin: 20px auto;
+    padding: 10px;
+}
+  /* Full-width inputs */
+  input[type=text], input[type=email] {
+    width: 100%;
+    padding: 22px 20px;
+    margin: 18px 0;
+    display: inline-block;
+    border: 1px solid #e1ad01;
+    box-sizing: border-box;
+  } 
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+#formText{
+    margin-left: 10px;
+line-height: 2;
+font-size: 30px;
+}
+#textArea {
+    width: 100%;
+height: 150px;
+margin-bottom: 30px;
+border: 1px solid #e1ad01;
+}
+/* ----- End Contact CSS -------- */
+
+/* ----- Start Blog CSS -------- */
+.blogFooter {
+    display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+.btn-blog a{
+    text-decoration: none;
+}
+.btn-blog{
+    text-decoration: none;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    padding: 6px;
+}
+.grid-item{
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 5% 1%;
+    border-left: 15px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    border-right: 2px solid #C4C4C4;
+    border-top: 2px solid #C4C4C4;
+    background-color: white;
+}
+.blogContainer {
+    display: flex;
+/* flex-wrap: wrap; */
+flex-direction: column;
+width: 80%;
+margin: auto;
+}
+/* ----- End Blog CSS -------- */
+
+/* ------- Start Services css */
+.serviceContainer{
+    width: 80%;
+    margin: auto;
+    font-size: 24px;
+}
+.herSection{
+    display: flex;
+    justify-content: space-between;
+}
+.herText {
+    flex: 0.6;
+    line-height: 2;
+    margin-right: 10px;
+}
+.herImg {
+    flex: 0.4;
+}
+.herImg img{
+    width: 100%;
+}
+.imgAppSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.imgAppSection img{
+    width: 50%;
+    max-width: 100%;
+}
+.bookServices {
+    position: relative;
+}
+.herBookSection {
+        /* Absolute position */
+        left: 0px;
+        position: absolute;
+        /* top: 0px; */
+
+        /* Take full size */
+        height: 100%;
+        width: 100%;
+
+        /* Create diagonal sides */
+        transform: skewY(0deg);
+
+        /* Background color */
+        background-color: #EFCC52;
+
+        /* Displayed under the main content */
+        z-index: -1;
+        line-height: 2;
+
+}
+.serviceFooter {
+    margin-top: 23%;
+    background: black;
+    padding: 5px;
+    border-top: 25px solid #e1ad01;
+    color: white;
+}
+/* ------- End Services css */
+.blogImg img {
+    width: 50%;
+}
+.Terms {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    display: none;
+  }
+
+  .menuIcon {
+      display: none;
+      
+  }
+  .slideshowImg{
+      display: flex;
+      justify-content: center;
+  }
+
+  .slideshowImg button{
+    background-color: #e1ad01;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  .slideshowImg button a{
+      text-decoration: none;
+      color: white;
+  }
+
+  .layered-card2 {
+    position: relative;
+    flex: 0.5;
+  }
+
+  .layered-card2::before {
+    background: #e1ad01;
+    content: '';
+
+    /* Position */
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 91%;
+    width: 100%;
+
+    /* Display under the main content */
+    z-index: -1;
+border: 2px solid #e1ad01;
+
+}
+
+  .layered-card2 img{
+    margin-top: 100px;
+    height: 66%;
+    width: 100%;
+    max-width: 85%;
+  }
+  .textWrapper2{
+    flex: 0.5;
+    background: rgba(255,255,255,0.8);
+    padding: 50px 100px 50px 60px;
+    /* margin-left: -152px; */
+    margin-top: 25px;
+}
+
+  .posiTextWrapper2 {
+    flex: 0.5;
+    margin-left: 40px;
+  }
+
+  .textWrapper2 p{
+    font-size: 14px;
+font-weight: 500;
+line-height: 2;
+padding: 10px;
+}
+.textWrapper2  a{
+    text-decoration: none;
+    background: rgba(21, 42, 50, 0.7);
+    padding: 10px;
+    margin: 5px;
+    justify-content: center;
+    display: flex;
+    color: white;
+    float: right;
+}
+
+@media(max-width: 700px) {
+    .posiTextWrapper2  a{
+        float: none;
+    }
+    .layered-card2 img{
+        height: 68%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .posiTextWrapper2 {
+        margin: 0;
+    }
+    .posiTextWrapper2 p {
+        font-size: 14px;
+    }
+    /* .hero-image {
+        height: 15%;
+    } */
+    .menuIcon {
+        display: block;
+        
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        display: block;
+      }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    /* Position and style the close button (top right corner) */
+
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      /* The navigation menu links */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+    /* Home page */
+    .navLinks ul li {
+        display: block;
+    }
+    /* .navLinks{
+        position: absolute;
+        background: #EFCC52;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    } */
+    .container_header .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navLinks ul {
+        padding: 30px;
+    }
+    .Wrapper {
+        display: block;
+    }
+    .firstWrapper img{
+        max-width: 100%;
+    }
+    .secondWrapper {
+        padding: 0;
+        margin-left: 0;
+    }
+    .secondWrapper h1 {
+        text-align: center;
+    }
+    .secondWrapperText p {
+        text-align: center;
+    }
+    .col-md{
+        margin-left: 10%;
+    margin-right: 10%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .blog-col {
+        margin-left: 10%;
+    margin-right: 10%;
+    }
+    section{
+        margin-top: 15%;
+    }
+    .footerP {
+        margin: 0;
+    }
+    .hr1 {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .hr2 {
+        width: 100%;
+    float: left;
+    margin-top: 0;
+    }
+    .Terms {
+        flex-direction: column;
+    }
+
+    /* ---End Home Page */
+
+    /* ---Start About Page */
+    .aboutImgText{
+        flex-direction: column;
+    }
+    .layered-card img {
+        max-width: 100%;
+        height: 73%;
+    }
+    .textWrapper {
+        padding: 0;
+        text-align: center;
+    }
+
+    /* ---End About Page */
+
+    /* ---Start Gallery Page */
+    .slideshow-container{
+     margin  : 80px 87px 5px 44px;  
+    }
+    /* ---End Gallery Page */
+
+    /* ---Start Service Page */
+    .herSection {
+        flex-direction: column-reverse;
+    }
+    .serviceFooter {
+        margin-top: 10%;
+    }
+    .herBookSection {
+        position: relative;
+    }
+    /* ---End Service Page */
+
+    /* ---Start Contact Page */
+    .contactRow {
+        flex-direction: column;
+    }
+    .imgCol img{
+        max-width: 100%;
+    }
+    /* ---End Contact Page */
+    .socials {
+            margin: 9px 40px 60px;
+            font-size: 16px;
+           cursor: pointer;
+    }
+    
+
+}
+@media(max-width: 830px) {
+    .textWrapper2  a{
+        float: none;
+    }
+    .layered-card2 img{
+        height: 68%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .textWrapper2 {
+        margin: 0;
+    }
+    .textWrapper2 p {
+        font-size: 14px;
+    }
+    /* .hero-image {
+        height: 15%;
+    } */
+    .menuIcon {
+        display: block;
+        
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        display: block;
+      }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    /* Position and style the close button (top right corner) */
+
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      /* The navigation menu links */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+    /* Home page */
+    .navLinks ul li {
+        display: block;
+    }
+    /* .navLinks{
+        position: absolute;
+        background: #EFCC52;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    } */
+    .container_header .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navLinks ul {
+        padding: 30px;
+    }
+    .Wrapper {
+        display: block;
+    }
+    .firstWrapper img{
+        max-width: 100%;
+    }
+    .secondWrapper {
+        padding: 0;
+        margin-left: 0;
+    }
+    .secondWrapper h1 {
+        text-align: center;
+    }
+    .secondWrapperText p {
+        text-align: center;
+    }
+    .col-md{
+        margin-left: 10%;
+    margin-right: 10%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .blog-col {
+        margin-left: 10%;
+    margin-right: 10%;
+    }
+    section{
+        margin-top: 15%;
+    }
+    .footerP {
+        margin: 0;
+    }
+    .hr1 {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .hr2 {
+        width: 100%;
+    float: left;
+    margin-top: 0;
+    }
+    .Terms {
+        flex-direction: column;
+    }
+
+    /* ---End Home Page */
+
+    /* ---Start About Page */
+    .aboutImgText{
+        flex-direction: column;
+    }
+    .layered-card img {
+        max-width: 100%;
+        height: 73%;
+    }
+    .textWrapper {
+        padding: 0;
+        text-align: center;
+    }
+
+    /* ---End About Page */
+
+    /* ---Start Gallery Page */
+    .slideshow-container{
+     margin  : 80px 87px 5px 44px;  
+    }
+    /* ---End Gallery Page */
+
+    /* ---Start Service Page */
+    .herSection {
+        flex-direction: column-reverse;
+    }
+    .serviceFooter {
+        margin-top: 10%;
+    }
+    .herBookSection {
+        position: relative;
+    }
+    /* ---End Service Page */
+
+    /* ---Start Contact Page */
+    .contactRow {
+        flex-direction: column;
+    }
+    .imgCol img{
+        max-width: 100%;
+    }
+    /* ---End Contact Page */
+    .socials {
+            margin: 9px 40px 60px;
+            font-size: 16px;
+           cursor: pointer;
+    }
+    
+
+}
+
+
+
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

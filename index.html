@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="container_header">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <h5>Ifedayo Durosinmi-Etti</h5>
+          </a>
+        </div>
+        <div class="navLinks sidenav" id="navLinks">
+          <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+          <!-- USING CHECKBOX HACK -->
+          <!-- <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+          <!-- <div class="menu"> -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <ul>
+            <li class="active">
+              <a href="index.html"> HOME </a>
+            </li>
+            <li>
+              <a href="about.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="gallery.html">GALLERY</a>
+            </li>
+            <li>
+              <a href="services.html">SERVICES</a>
+            </li>
+            <li>
+              <a href="blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="funding.html">FUNDING</a>
+            </li>
+            <li>
+              <a href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </div>
+        <span
+          class="menuIcon"
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          >&#9776;</span
+        >
+        <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+      </div>
+
+      <div class="hero-image">
+        <!-- <div class="hero-text"> -->
+        <!-- <button> <a href="about.html"> Read More</a></button> -->
+        <!-- </div> -->
+      </div>
+
+      <!-- new testing -->
+      <div class="heroNew">
+        <div class="hero-overlay">
+
+        </div>
+        <img src="assets/img/heroEtti.png" alt="" class="imageHero">
+      </div>
+
+      <!-- Biography Section -->
+      <div class="Wrapper">
+        <div class="firstWrapper">
+          <img src="assets/img/img5.png" alt="" />
+        </div>
+        <div class="secondWrapper">
+          <!-- text-heading -->
+          <h1 style="margin-top: 10%">why Ife Durosinmi-Etti?</h1>
+          <!-- text content -->
+          <div class="secondWrapperText">
+            <p>
+              Ifedayo Durosinmi – Etti is a sales and marketing expert with over
+              10 years of management and leadership experience working in the
+              fashion, marketing and manufacturing Industries. She holds a first
+              degree in Biochemistry and an MBA in Global Business.
+            </p>
+
+            <p>
+              Prior to moving back to Nigeria in 2012, she worked with Arcadia
+              Group Plc, a British multinational retailing company headquartered
+              in London and Aspire Acquisitions. She later joined Nigerian
+              Breweries (Heineken Operating Company in Nigeria) as a Young
+              African Talent (YAT) and transitioned to their Corporate
+              Communications Department as Corporate Social Responsibility and
+              Sustainability Support Manager where she successfully managed
+              various corporate social responsibility and sustainability
+              projects. Ifedayo is also an associate member of the Advertising
+              Practitioners Council of Nigeria (APCON).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <section>
+        <!-- Our services Text -->
+        <h2></h2>
+        <div class="row">
+          <div class="col-md">
+            <h1>App</h1>
+          </div>
+          <div class="col-md">
+            <h1>Herconomy</h1>
+          </div>
+          <div class="col-md">
+            <h1>Books</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Blogs -->
+      <section class="blogs">
+        <div class="blogsHeader">
+          <div class="roleBlog"></div>
+          <h2 style="margin-right: 50px">Latest Blogs</h2>
+          <div class="blackBox"></div>
+        </div>
+        <div class="row">
+          <div class="blog-col">
+            <div class="imgText">
+              <div class="imgSrc">
+                <img class="imageSrc" src="assets/img/blog1.jpg" alt="" />
+              </div>
+              <div class="textHeader">
+                <h3>
+                  The Herconomy Enterprise Challenge is coming with a twist!
+                </h3>
+              </div>
+            </div>
+            <div class="btnDate">
+              <a class="btn-btn" href="blog.html">Read More</a>
+              <p class="pText">Jan 2, 2021</p>
+            </div>
+          </div>
+
+          <div class="blog-col">
+            <div class="imgText">
+              <div class="imgSrc">
+                <img class="imageSrc" src="assets/img/bill.jpg" alt="" />
+              </div>
+              <div class="textHeader">
+                <h3>Teenage Vision Boarding</h3>
+              </div>
+            </div>
+            <div class="btnDate1">
+              <a class="btn-btn" href="blog.html">Read More</a>
+              <p class="pText">Dec 18, 2021</p>
+            </div>
+          </div>
+
+          <div class="blog-col">
+            <div class="imgText">
+              <div class="imgSrc">
+                <img class="imageSrc" src="assets/img/blog2.jpg" alt="" />
+              </div>
+              <div class="textHeader">
+                <h3>
+                  Thank You for Going Strong With Us Through 2021, 2022 Will Be
+                  Phenomenal!
+                </h3>
+              </div>
+            </div>
+            <div class="btnDate">
+              <a class="btn-btn" href="blog.html">Read More</a>
+              <p class="pText">Dec 31, 2021</p>
+            </div>
+          </div>
+
+          <div class="blog-col">
+            <div class="imgText">
+              <div class="imgSrc">
+                <img class="imageSrc" src="assets/img/blog3.jpg" alt="" />
+              </div>
+              <div class="textHeader">
+                <h3>What is your legacy to your children?</h3>
+              </div>
+            </div>
+            <div class="btnDate1">
+              <a class="btn-btn" href="blog.html">Read More</a>
+              <p class="pText">Sep 10, 2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+
+      <!-- Footer -->
+      <div class="footer">
+        <!-- info -->
+        <div class="infoSocials">
+          <div class="footerP">
+            <p>info@ifedurosinmietti.com</p>
+          </div>
+          <!-- social network -->
+          <div class="socials">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+          </div>
+        </div>
+
+        <!-- Middle Name -->
+        <div class="nameFooter">
+          <hr class="hr1" color="white" />
+          <h2 style="text-align: center">Ifedayo Durosinmi-Etti</h2>
+          <hr class="hr2" color="white" />
+        </div>
+        <div class="copyright">
+          <div>
+            <p><a href="profile.html">About author</a></p>
+            <p>copyright &copy; 2021 by olamiposi ogundipe</p>
+          </div>
+          <div class="Terms">
+            <p>Terms of use</p>
+            <p>Privacy Statement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript for Toggle Menu -->
+    <!-- <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script> -->
+    <script>
+      function openNav() {
+        document.getElementById("navLinks").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("navLinks").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="container_header">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <h5>Ifedayo Durosinmi-Etti</h5>
+          </a>
+        </div>
+        <div class="navLinks sidenav" id="navLinks">
+          <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+          <!-- USING CHECKBOX HACK -->
+          <!-- <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+          <!-- <div class="menu"> -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+              <li >
+                <a href="index.html"> HOME </a>
+              </li>
+              <li>
+                <a href="about.html">ABOUT</a>
+              </li>
+              <li>
+                <a href="gallery.html">GALLERY</a>
+              </li>
+              <li>
+                <a href="services.html">SERVICES</a>
+              </li>
+              <li>
+                <a href="blog.html">BLOG</a>
+              </li>
+              <li>
+                <a href="funding.html">FUNDING</a>
+              </li>
+              <li class="active">
+                <a href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          <!-- </div> -->
+        </div>
+        <span class="menuIcon"  style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+      </div>
+    </div>
+
+      <div class="contactRow">
+        <!-- image -->
+        <div class="imgCol">
+          <img  src="assets/img/img4.png" alt="" />
+          <p><b>Email: info@ifedurosinmietti.com</b></p>
+        </div>
+        <!-- form -->
+        <div class="formCol">
+          <h1 id="formText">Contact Her</h1>
+          <p>Have any enquiry or feedback for Her?</p>
+
+          <form action="">
+            <div class="formContainer">
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"  
+              />
+              <br>
+
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="email"
+                
+              />
+              <br>
+              <textarea name="" id="textArea"  placeholder="Message">
+                
+              </textarea>
+              <br>
+
+              <button type="#">Send</button>
+            </div>
+            </div>
+          </form>
+        </div>
+
+         <!-- Footer -->
+      <div class="footer">
+        <!-- info -->
+        <div class="infoSocials">
+            <div class="footerP">
+              <p>info@ifedurosinmietti.com</p>
+            </div>
+            <!-- social network -->
+            <div class="socials">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+
+        <!-- Middle Name -->
+        <div class="nameFooter">
+            <hr class="hr1" color="white">
+            <h2 style="text-align: center;">Ifedayo Durosinmi-Etti</h2>
+            <hr class="hr2" color="white">
+        </div>
+        <div class="copyright">
+            <div>
+                <p><a href="profile.html">About author</a></p>
+                <p>copyright &copy; 2021 by olamiposi ogundipe</p>
+            </div>
+            <div class="Terms">
+                <p>Terms of use</p>
+                <p>Privacy Statement</p>
+            </div>
+        </div>
+      </div>
+    
+        <!-- Javascript for Toggle Menu -->
+        <script>
+          function openNav() {
+            document.getElementById("navLinks").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("navLinks").style.width = "0";
+          }
+          </script>
+    
+  </body>
+</html>

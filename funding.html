@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="container_header">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <h5>Ifedayo Durosinmi-Etti</h5>
+          </a>
+        </div>
+        <div class="navLinks sidenav" id="navLinks">
+          <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+          <!-- USING CHECKBOX HACK -->
+          <!-- <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+          <!-- <div class="menu"> -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+              <li>
+                <a href="index.html"> HOME </a>
+              </li>
+              <li>
+                <a href="about.html">ABOUT</a>
+              </li>
+              <li>
+                <a href="gallery.html">GALLERY</a>
+              </li>
+              <li>
+                <a href="services.html">SERVICES</a>
+              </li>
+              <li>
+                <a href="blog.html">BLOG</a>
+              </li>
+              <li class="active">
+                <a href="funding.html">FUNDING</a>
+              </li>
+              <li>
+                <a href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          <!-- </div> -->
+        </div>
+        <span class="menuIcon"  style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+      </div>
+    </div>
+
+    <!-- BLOG -->
+    <div style="margin-top: 50px;">
+        <h1 style="text-align: center;">Funding</h2>
+      </div>
+
+      <!-- My Profile -->
+      <div class="aboutImgText">
+        <!-- image Text -->
+        <div class="layered-card2">
+          <img src="assets/img/Herconomy.webp" />
+        </div>
+        <!-- Text -->
+        <div class="textWrapper2">
+          <p>
+            Herconomy, a platform that aims to economically empower women, has just completed a successful 
+            pre-seed round of £450,000 in just 24 hours, showcasing the growing investor appetite for female
+             equality. <br>
+            
+            Based in Lagos, Nigeria, the organisation counts 15,000 entrepreneurs and professionals from 
+            around the world as members, including 1,500 UK members. A significant portion of their latest 
+            funding round came from its UK-based committee members and angel investors. <br>
+            
+            Herconomy provides female members with training, jobs and capacity building opportunities. 
+            They also offer access to grants, loans, scholarships, employment and investment and has 
+            partnered with both global and local brands to provide women with discounts on key products
+             and services.
+          </p>
+          <p>
+            Use of funds and customer innovation
+            The funds will be used to improve recruitment, marketing and technology capacities and help 
+            Herconomy become the world’s leading neobank for women, according to its female founder,
+             Ife Durosinmi-Etti. <br>
+            
+            They also want to further develop UK partnerships to support women and build closer business links
+             between UK female-focused companies and the Nigerian business community, enabling the creation 
+            of a more diverse and inclusive transnational business ecosystem. <br>
+            
+            Herconomy’s aim to become a leading female-focused neobank, also known as fully digital
+             platforms that support customers with their financial needs, is part of the financial technology 
+            revolution and is innovating the customer experience compared to what traditional banks can offer. <br>
+            
+            This means Herconomy’s digital services have the potential to reach a more diverse group of women
+             and economically empower them on a global scale.
+          </p>
+          <a href="https://diversityq.com/herconomy-raises-450000-to-further-plan-of-female-empowerment-1517119/">Read More</a>
+        </div>
+      </div>
+
+       <!-- Footer -->
+       <div class="footer">
+        <!-- info -->
+        <div class="infoSocials">
+            <div class="footerP">
+              <p>info@ifedurosinmietti.com</p>
+            </div>
+            <!-- social network -->
+            <div class="socials">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+
+        <!-- Middle Name -->
+        <div class="nameFooter">
+            <hr class="hr1" color="white">
+            <h2 style="text-align: center;">Ifedayo Durosinmi-Etti</h2>
+            <hr class="hr2" color="white">
+        </div>
+        <div class="copyright">
+            <div>
+                <p><a href="profile.html">About author</a></p>
+                <p>copyright &copy; 2021 by olamiposi ogundipe</p>
+            </div>
+            <div class="Terms">
+                <p>Terms of use</p>
+                <p>Privacy Statement</p>
+            </div>
+        </div>
+      </div>
+
+      
+
+       <!-- Javascript for Toggle Menu -->
+       <script>
+        function openNav() {
+          document.getElementById("navLinks").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("navLinks").style.width = "0";
+        }
+        </script>
+
+  </body>
+</html>
